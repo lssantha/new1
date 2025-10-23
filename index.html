@@ -58,8 +58,9 @@
         "https://courseweb.sliit.lk/login/index.php",
         "https://courseweb.sliit.lk/login/index.php",
       ];
-      const googleDriveLink =
-        "https://drive.google.com/file/d/1yq_fCDYGylRrRo783BN4JdXxw2lVkWkq/view?usp=drive_link"; // Replace with your actual Google Drive link
+      // Convert Google Drive link to preview-only mode (prevents easy downloading)
+      const googleDriveFileId = "1yq_fCDYGylRrRo783BN4JdXxw2lVkWkq";
+      const googleDriveLink = `https://drive.google.com/file/d/${googleDriveFileId}/preview`;
 
       document
         .getElementById("watchBtn")
